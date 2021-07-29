@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="container">
+        <div class="inner__container">
+            <div class="headings">
+                <h2 id="question"> Quiz</h2>
+            </div>
+            <div class="options">
+                <ul>
+                    <li><button value="a" class="ans" id="option1" onclick="getValue(this.id);">Option 1</button></li>
+                    <li><button value="b" class="ans" id="option2" onclick="getValue(this.id);">Option 2</button></li>
+                    <li><button value="c" class="ans" id="option3" onclick="getValue(this.id);">Option 3</button></li>
+                    <li><button value="d" class="ans" id="option4" onclick="getValue(this.id);">Option 4</button></li>
+                </ul>
+            </div>
+            <div class="btn" style="display: flex; justify-content: center;
+            align-items: center;">
+                <button type="submit" class="Submit" onclick="getAnswer();">Submit</button>
+                <button type="submit" class="Next" onclick="Next();">Next</button>
+                <button type="submit" class="Try" onclick="location.reload();">Try Again</button>
+            </div>
+            <div class="showArea">
+                <h2 class="showText">Your Score is</h2>
+            </div>  
+            <h1 style="text-align: center;">Created By Madhurendra Nath Tiwari</h1>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
